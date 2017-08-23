@@ -13,6 +13,7 @@ import static android.R.id.list;
 public class MainActivity extends AppCompatActivity {
     private Person observable;
     private int i=0;
+    private List<MyObserver> list=new ArrayList<MyObserver>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,5 +31,10 @@ public class MainActivity extends AppCompatActivity {
         observable.setName(""+s);
         observable.setAge(s);
         observable.setSex(s%2==0?"男":"女");
+    }
+    public void del(View view){
+        Random random = new Random();
+        int s = random.nextInt(i)%(i+1);
+        observable.deleteObserver(list.get(s));//取消注册
     }
 }

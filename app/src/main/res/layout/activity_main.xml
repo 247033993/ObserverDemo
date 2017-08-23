@@ -20,5 +20,11 @@
         android:layout_height="wrap_content"
         android:onClick="update"
         android:text="改变数据"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="del"
+        android:text="取消订阅"/>
 
 </LinearLayout>
