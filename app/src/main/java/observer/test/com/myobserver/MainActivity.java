@@ -1,15 +1,16 @@
 package observer.test.com.myobserver;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static android.R.id.list;
-
+/**
+ * 第一个Demo
+ */
 public class MainActivity extends AppCompatActivity {
     private Person observable;
     private int i=0;
